@@ -13,22 +13,6 @@ class ContentFooterView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
     
     var genres = [String]()
-
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        self.commonInit()
-//    }
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//        self.commonInit()
-//    }
-//
-//    func commonInit(){
-//        let view = Bundle.main.loadNibNamed("ContentFooterView", owner: self, options: nil)?.first as! UIView
-//        view.frame = self.bounds
-//        self.addSubview(view)
-//    }
     
     class func instanceFromNib() -> ContentFooterView {
            let view = UINib(nibName: "ContentFooterView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! ContentFooterView
@@ -42,24 +26,7 @@ class ContentFooterView: UIView {
         collectionView.dataSource = self
         
         collectionView.register(UINib(nibName: "ContentFooterViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
-        
-        
     }
-    
-//    func updateCellLayout(handler: @escaping ((CGFloat) -> Void)) {
-//
-//        collectionView.delegate = self
-//        collectionView.dataSource = self
-//
-//        collectionView.register(UINib(nibName: "ContentFooterViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
-//
-//        collectionView.performBatchUpdates({
-//
-//        }) { (finish) in
-//
-//            handler(self.collectionView.contentSize.height + 122.0)
-//        }
-//    }
 }
 
 extension ContentFooterView: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
