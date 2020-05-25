@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18E6C5DDB770FAEC71C911274038F01D /* CachyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561A940E9119F93657CE59E768F23225 /* CachyObject.swift */; };
+		294CC0678AD2B64286B3F6CEE9B4ED08 /* Cachy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87858F640E6DFC7F460A2CB46FB87E5D /* Cachy.swift */; };
+		3D6EAE9DF01FEE2D2D6935632EEBE697 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		43C4DA4DCB915E76666C7F59D2151F0F /* CachyKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F659CC120FA7DB88D871ED08F07F3B /* CachyKit-dummy.m */; };
+		63A727F7E965E5F432FD1417CD47F23A /* CachyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27780CFA7CE4F8C26E865896B185D52 /* CachyLoader.swift */; };
+		7E0BD360F32F5CD9F5926EEA16102528 /* CachyKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE72D86A77855D5D876BCA910CC5AF7D /* CachyKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89EF75FECC238759254C9A12CAACA1F7 /* CachyUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E45FE7700A8DADE15A936953FA70461 /* CachyUIImage.swift */; };
+		94D5443E71CE83E550643CD7B07A6A68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		AF59F8DF53D56B9FB2F10CF0AC0EAADD /* Pods-backpacker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA534E0765ADA8948A7AEEE74989A10A /* Pods-backpacker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9189E991EBC10E42334BDECEBE868F4 /* Pods-backpacker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7240B9B315EB40301AB1EBD3045A8C /* Pods-backpacker-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A46BD7F97DFA7E7A8F15FE17E755B8FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 028FC66D02942DB1FB29C8476E8F499A;
+			remoteInfo = CachyKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B8EC7364048E7CE9FA38B78E7DF1D8E /* CachyKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CachyKit-Info.plist"; sourceTree = "<group>"; };
+		1E85BB635414D14D7660842717B93902 /* Pods-backpacker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-backpacker.modulemap"; sourceTree = "<group>"; };
+		24894C5BB9E4ED44FD0EDE86030368E3 /* Pods-backpacker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-backpacker-Info.plist"; sourceTree = "<group>"; };
+		2E45FE7700A8DADE15A936953FA70461 /* CachyUIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachyUIImage.swift; path = Sources/Cachy/CachyUIImage.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3BE72CBDC36072944EF7CB00FBFA16A0 /* Pods-backpacker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-backpacker.release.xcconfig"; sourceTree = "<group>"; };
+		561A940E9119F93657CE59E768F23225 /* CachyObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachyObject.swift; path = Sources/Cachy/CachyObject.swift; sourceTree = "<group>"; };
+		5DCD38238FC272FB76B643B155D0B99D /* Pods_backpacker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_backpacker.framework; path = "Pods-backpacker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61DE80A8D654EA3A520C5A3CD968ACC4 /* CachyKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CachyKit.modulemap; sourceTree = "<group>"; };
+		769D32AA0BC5FA8348839CF1A81055AB /* Pods-backpacker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-backpacker-acknowledgements.plist"; sourceTree = "<group>"; };
+		77E5C16BB574A84010FA7A8E75C4BDDF /* Pods-backpacker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-backpacker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		87858F640E6DFC7F460A2CB46FB87E5D /* Cachy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cachy.swift; path = Sources/Cachy/Cachy.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A68801EECBDBA9C1E706A298C328852A /* Pods-backpacker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-backpacker-frameworks.sh"; sourceTree = "<group>"; };
+		AA534E0765ADA8948A7AEEE74989A10A /* Pods-backpacker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-backpacker-umbrella.h"; sourceTree = "<group>"; };
+		AADE958A07C606EA122A3C1484CEE1FB /* CachyKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CachyKit-prefix.pch"; sourceTree = "<group>"; };
+		B25FEE908EB43CC51E7A506CFC114473 /* CachyKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CachyKit.xcconfig; sourceTree = "<group>"; };
+		D9886F21BD26463FE3AB459981DB7980 /* CachyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CachyKit.framework; path = CachyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7240B9B315EB40301AB1EBD3045A8C /* Pods-backpacker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-backpacker-dummy.m"; sourceTree = "<group>"; };
+		EE72D86A77855D5D876BCA910CC5AF7D /* CachyKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CachyKit-umbrella.h"; sourceTree = "<group>"; };
+		F27780CFA7CE4F8C26E865896B185D52 /* CachyLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachyLoader.swift; path = Sources/Cachy/CachyLoader.swift; sourceTree = "<group>"; };
+		F2F659CC120FA7DB88D871ED08F07F3B /* CachyKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CachyKit-dummy.m"; sourceTree = "<group>"; };
+		FC42DA14F115A46C90F199216EE7BE9A /* Pods-backpacker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-backpacker.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E71A215761C422AD4D1BDA76341E5BB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D5443E71CE83E550643CD7B07A6A68 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2CF0A7C3713F2DC4481EC076A7878D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6EAE9DF01FEE2D2D6935632EEBE697 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A6B52DEF1B34CC8EB1EB01215E8EE21 /* CachyKit */ = {
+			isa = PBXGroup;
+			children = (
+				87858F640E6DFC7F460A2CB46FB87E5D /* Cachy.swift */,
+				F27780CFA7CE4F8C26E865896B185D52 /* CachyLoader.swift */,
+				561A940E9119F93657CE59E768F23225 /* CachyObject.swift */,
+				2E45FE7700A8DADE15A936953FA70461 /* CachyUIImage.swift */,
+				E40DBF7D6CD1771E620D3108E67A2E91 /* Support Files */,
+			);
+			name = CachyKit;
+			path = CachyKit;
+			sourceTree = "<group>";
+		};
+		247119F0DEB6AED0DB3586253B51E923 /* Pods-backpacker */ = {
+			isa = PBXGroup;
+			children = (
+				1E85BB635414D14D7660842717B93902 /* Pods-backpacker.modulemap */,
+				77E5C16BB574A84010FA7A8E75C4BDDF /* Pods-backpacker-acknowledgements.markdown */,
+				769D32AA0BC5FA8348839CF1A81055AB /* Pods-backpacker-acknowledgements.plist */,
+				DD7240B9B315EB40301AB1EBD3045A8C /* Pods-backpacker-dummy.m */,
+				A68801EECBDBA9C1E706A298C328852A /* Pods-backpacker-frameworks.sh */,
+				24894C5BB9E4ED44FD0EDE86030368E3 /* Pods-backpacker-Info.plist */,
+				AA534E0765ADA8948A7AEEE74989A10A /* Pods-backpacker-umbrella.h */,
+				FC42DA14F115A46C90F199216EE7BE9A /* Pods-backpacker.debug.xcconfig */,
+				3BE72CBDC36072944EF7CB00FBFA16A0 /* Pods-backpacker.release.xcconfig */,
+			);
+			name = "Pods-backpacker";
+			path = "Target Support Files/Pods-backpacker";
+			sourceTree = "<group>";
+		};
+		390972FD58214D9D24FE4EF8709DAE55 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				247119F0DEB6AED0DB3586253B51E923 /* Pods-backpacker */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9100DD5A007DB2CA68C925B242DED18A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A6B52DEF1B34CC8EB1EB01215E8EE21 /* CachyKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C173758939A0D359AD20D91D354792C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9886F21BD26463FE3AB459981DB7980 /* CachyKit.framework */,
+				5DCD38238FC272FB76B643B155D0B99D /* Pods_backpacker.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				9100DD5A007DB2CA68C925B242DED18A /* Pods */,
+				C173758939A0D359AD20D91D354792C4 /* Products */,
+				390972FD58214D9D24FE4EF8709DAE55 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E40DBF7D6CD1771E620D3108E67A2E91 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				61DE80A8D654EA3A520C5A3CD968ACC4 /* CachyKit.modulemap */,
+				B25FEE908EB43CC51E7A506CFC114473 /* CachyKit.xcconfig */,
+				F2F659CC120FA7DB88D871ED08F07F3B /* CachyKit-dummy.m */,
+				0B8EC7364048E7CE9FA38B78E7DF1D8E /* CachyKit-Info.plist */,
+				AADE958A07C606EA122A3C1484CEE1FB /* CachyKit-prefix.pch */,
+				EE72D86A77855D5D876BCA910CC5AF7D /* CachyKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CachyKit";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		00E918466DCABFB2D52453B22DB137F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF59F8DF53D56B9FB2F10CF0AC0EAADD /* Pods-backpacker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B16DDE9BAFE298312575805166B34E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0BD360F32F5CD9F5926EEA16102528 /* CachyKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		028FC66D02942DB1FB29C8476E8F499A /* CachyKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44E8750A3655003EEC84C9BADDE2B51D /* Build configuration list for PBXNativeTarget "CachyKit" */;
+			buildPhases = (
+				6B16DDE9BAFE298312575805166B34E0 /* Headers */,
+				29C22EB75E35181B76DC56913CB00BEA /* Sources */,
+				E71A215761C422AD4D1BDA76341E5BB2 /* Frameworks */,
+				3E8402669F8BC662FB193F35AA18E444 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CachyKit;
+			productName = CachyKit;
+			productReference = D9886F21BD26463FE3AB459981DB7980 /* CachyKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8B50B98F01F1280DB014296C83AD272F /* Pods-backpacker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DBC23696DA972E1D7E9C6148CFD4A8E /* Build configuration list for PBXNativeTarget "Pods-backpacker" */;
+			buildPhases = (
+				00E918466DCABFB2D52453B22DB137F6 /* Headers */,
+				985C638CBF5EC8EC8F375C99B758FD4A /* Sources */,
+				FC2CF0A7C3713F2DC4481EC076A7878D /* Frameworks */,
+				833F31FF90B1CE31552405B5471B16A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A3193B9BA051B47F8FA623129DB2AFF /* PBXTargetDependency */,
+			);
+			name = "Pods-backpacker";
+			productName = "Pods-backpacker";
+			productReference = 5DCD38238FC272FB76B643B155D0B99D /* Pods_backpacker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C173758939A0D359AD20D91D354792C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				028FC66D02942DB1FB29C8476E8F499A /* CachyKit */,
+				8B50B98F01F1280DB014296C83AD272F /* Pods-backpacker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E8402669F8BC662FB193F35AA18E444 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		833F31FF90B1CE31552405B5471B16A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29C22EB75E35181B76DC56913CB00BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				294CC0678AD2B64286B3F6CEE9B4ED08 /* Cachy.swift in Sources */,
+				43C4DA4DCB915E76666C7F59D2151F0F /* CachyKit-dummy.m in Sources */,
+				63A727F7E965E5F432FD1417CD47F23A /* CachyLoader.swift in Sources */,
+				18E6C5DDB770FAEC71C911274038F01D /* CachyObject.swift in Sources */,
+				89EF75FECC238759254C9A12CAACA1F7 /* CachyUIImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		985C638CBF5EC8EC8F375C99B758FD4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9189E991EBC10E42334BDECEBE868F4 /* Pods-backpacker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A3193B9BA051B47F8FA623129DB2AFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CachyKit;
+			target = 028FC66D02942DB1FB29C8476E8F499A /* CachyKit */;
+			targetProxy = A46BD7F97DFA7E7A8F15FE17E755B8FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2BEBC011832B1E4F8499E322BD98DCA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B25FEE908EB43CC51E7A506CFC114473 /* CachyKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CachyKit/CachyKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CachyKit/CachyKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CachyKit/CachyKit.modulemap";
+				PRODUCT_MODULE_NAME = CachyKit;
+				PRODUCT_NAME = CachyKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C3DA3FC08FA645C34380DE6FF68E78C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BE72CBDC36072944EF7CB00FBFA16A0 /* Pods-backpacker.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-backpacker/Pods-backpacker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-backpacker/Pods-backpacker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CADE19F62C50CDB8DEB84E36370A10D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC42DA14F115A46C90F199216EE7BE9A /* Pods-backpacker.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-backpacker/Pods-backpacker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-backpacker/Pods-backpacker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CB34DE481ECB1A5705A0C26B32B5D409 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B25FEE908EB43CC51E7A506CFC114473 /* CachyKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CachyKit/CachyKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CachyKit/CachyKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CachyKit/CachyKit.modulemap";
+				PRODUCT_MODULE_NAME = CachyKit;
+				PRODUCT_NAME = CachyKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44E8750A3655003EEC84C9BADDE2B51D /* Build configuration list for PBXNativeTarget "CachyKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BEBC011832B1E4F8499E322BD98DCA1 /* Debug */,
+				CB34DE481ECB1A5705A0C26B32B5D409 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DBC23696DA972E1D7E9C6148CFD4A8E /* Build configuration list for PBXNativeTarget "Pods-backpacker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CADE19F62C50CDB8DEB84E36370A10D5 /* Debug */,
+				C3DA3FC08FA645C34380DE6FF68E78C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,16 @@
+PODS:
+  - CachyKit (1.0.12)
+
+DEPENDENCIES:
+  - CachyKit
+
+SPEC REPOS:
+  trunk:
+    - CachyKit
+
+SPEC CHECKSUMS:
+  CachyKit: 2124962c967bcae57e31bb3fd5b64ae7063bf0fc
+
+PODFILE CHECKSUM: 3ae3f2b660e20649785989eadc4efa182443d7db
+
+COCOAPODS: 1.8.4
