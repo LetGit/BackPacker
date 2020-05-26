@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import CachyKit
 
 class ContentViewController: UIViewController {
     
     var results: NSDictionary!
+    let cachy = CachyLoader()
     
     @IBOutlet weak var screenshotScrollView: UIScrollView!
     @IBOutlet weak var mainScrollView: UIScrollView!
+    @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var trackNameLabel: UILabel!
     @IBOutlet weak var sellerNameLabel: UILabel!
     @IBOutlet weak var formattedPriceLabel: UILabel!
@@ -48,6 +51,8 @@ class ContentViewController: UIViewController {
     
     func updateResults() {
         
+        let spacing: CGFloat = 10.0
+        
         let screenshotUrls = results["screenshotUrls"] as! Array<String>
         
         for (index, url) in screenshotUrls.enumerated() {
@@ -57,9 +62,9 @@ class ContentViewController: UIViewController {
             let imageView = self.resizeImage(image: UIImage(data: data!)!)
             imageView.contentMode = .scaleAspectFit
             
-            imageView.frame.origin = CGPoint(x: (imageView.frame.width + 10.0) * CGFloat(index), y: 0)
+            imageView.frame.origin = CGPoint(x: (imageView.frame.width + spacing) * CGFloat(index), y: 0)
             
-            screenshotScrollView.contentSize.width = (imageView.frame.width + 10.0) * CGFloat(1 + index)
+            screenshotScrollView.contentSize.width = (imageView.frame.width + spacing) * CGFloat(1 + index)
             screenshotScrollView.addSubview(imageView)
         }
         
@@ -76,7 +81,11 @@ class ContentViewController: UIViewController {
         trackContentRatingLabel.text = results["trackContentRating"] as? String
         versionLabel.text = results["version"] as? String
         descriptionLabel.text = results["description"] as? String
-        releaseNotesLabel.text = results["releaseNotes"] as? String
+
+        if let releaseNote = results["releaseNotes"] as? String { // 수정사항이 있을 경우
+            releaseNotesLabel.text = releaseNote
+            downIcon.isHidden = false
+        }
     }
     
     func setLineView() {
@@ -101,6 +110,7 @@ class ContentViewController: UIViewController {
         let contentFooterView = ContentFooterView.instanceFromNib()
         
         contentFooterView.genres = (results["genres"] as! [String]).map { "#" + $0 }
+        contentFooterView.translatesAutoresizingMaskIntoConstraints = false
         
         contentFooterView.collectionView.performBatchUpdates({
 
@@ -110,11 +120,17 @@ class ContentViewController: UIViewController {
             let _origin = contentFooterView.collectionView.frame.origin.y
             let _bottom: CGFloat = 15.0
             
-            contentFooterView.frame = CGRect(origin: CGPoint(x: 0, y: self.mainScrollView.contentSize.height), size: CGSize(width: self.view.frame.width, height: _height + _origin + _bottom))
             self.mainScrollView.addSubview(contentFooterView)
-            self.mainScrollView.contentSize.height += contentFooterView.frame.height
+
+            self.mainScrollView.contentSize.height += (contentFooterView.frame.height)
             
-            self.view.layoutIfNeeded()
+            contentFooterView.heightAnchor.constraint(equalToConstant: _height + _origin + _bottom).isActive = true
+            contentFooterView.widthAnchor.constraint(equalToConstant: self.mainScrollView.frame.width).isActive = true
+            
+            contentFooterView.topAnchor.constraint(equalTo: self.descriptionLabel.bottomAnchor, constant: 50.0).isActive = true
+            contentFooterView.leadingAnchor.constraint(equalTo: self.mainScrollView.leadingAnchor).isActive = true
+            contentFooterView.trailingAnchor.constraint(equalTo: self.mainScrollView.trailingAnchor).isActive = true
+            contentFooterView.bottomAnchor.constraint(equalTo: self.mainScrollView.bottomAnchor).isActive = true
         }
     }
     
@@ -137,6 +153,10 @@ class ContentViewController: UIViewController {
     //MARK: IBAction
     
     @IBAction func onReleaseNotes(_ sender: UIButton) {
+        
+        guard results["releaseNotes"] != nil else { // 수정사항이 없을 경우 버튼 기능 X
+            return
+        }
         
         let releaseView = appInfoBackView.arrangedSubviews.last!
         

@@ -69,10 +69,15 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
         let dict = results?[indexPath.row] as! NSDictionary
         let genres = dict["genres"] as? NSArray
         
-        let url = URL(string: dict["artworkUrl512"] as! String)
-        let data = try? Data(contentsOf: url!)
-
-        cell.artworkUrl512ImageView.image = UIImage(data: data!)
+        let url = URL(string: dict["artworkUrl512"] as! String)!
+        
+        cachy.load(url: url) { [weak cell] data, _ in
+            
+            guard let cell = cell else { return }
+            
+            cell.artworkUrl512ImageView.image = UIImage(data: data)
+        }
+        
         cell.trackCensoredNameLabel.text = dict["trackCensoredName"] as? String
         cell.sellerNameLabel.text = dict["sellerName"] as? String
         cell.genresLabel.text = genres?.componentsJoined(by: ",")
